@@ -737,6 +737,7 @@ $(document).ready(function () {
 	// }
 	// replace($('#block'), $('#to'), $('#from'), breakLg);
 	
+	// Swiper
 	const sliderHome = new Swiper('#sliderHome', {
 		spaceBetween: 20,
 		loop: true,
@@ -758,5 +759,8 @@ $(document).ready(function () {
 		},
 
 	});
+
+	// AOS
+	AOS.init();
 
 });
