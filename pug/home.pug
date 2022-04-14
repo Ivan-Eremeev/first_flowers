@@ -42,5 +42,31 @@ block content
 										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
 						.slider__pagination.swiper-pagination
 			//	/slider
+
+			// items
+			.items
+				.container 
+					.items__container
+						.row.gy-3.justify-content-center
+							.col-lg-4.col-md-6
+								.items__card 
+									.items__title Бесплатная доставка
+										span по Москве за 2 часа
+									.items__icon 
+										img(src="img/car_icon.svg", alt="")
+							.col-lg-4.col-md-6
+								.items__card 
+									.items__title Бесплатная открытка
+										span к каждому букету	
+									.items__icon 
+										img(src="img/sheet_icon.svg", alt="")
+							.col-lg-4.col-md-6
+								.items__card 
+									.items__title Вежливые курьеры
+										span до самого вручения
+									.items__icon 
+										img(src="img/man_icon.svg", alt="")
+
+			//	/items
 			
 		include blocks/footer.pug

@@ -738,7 +738,7 @@ $(document).ready(function () {
 	// replace($('#block'), $('#to'), $('#from'), breakLg);
 	
 	const sliderHome = new Swiper('#sliderHome', {
-		spaceBetween: 30,
+		spaceBetween: 20,
 		loop: true,
 		autoplay: true,
 		pagination: {

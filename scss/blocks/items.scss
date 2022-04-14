@@ -1,0 +1,28 @@
+.items {
+  &__container {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 17px 30px;
+    background-color: $white;
+    box-shadow: $box_shadow;
+    border-radius: 24px;
+  }
+  &__title {
+    font-weight: 600;
+    span {
+      display: block;
+      color: $prompt;
+      font-weight: 500;
+    }
+  }
+  &__icon {
+    width: 42px;
+    flex-shrink: 0;
+  }
+}

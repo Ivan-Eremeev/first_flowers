@@ -3,6 +3,7 @@
 	background-color: $light_pink;
 	&__nav {
 		transition: .5s;
+		margin-left: 200px;
 	}
 	&__list {
 		display: flex;
@@ -30,6 +31,9 @@
 		display: none;
 	}
 	@include media-breakpoint-down(xxl) {
+		&__nav {
+			margin-left: 0;
+		}
 		&__list {
 			justify-content: center;
 		}
@@ -45,6 +49,7 @@
 			bottom: 0;
 			overflow-y: auto;
 			overflow-x: hidden;
+			z-index: 10;
 		}
 		&__list {
 			display: block;

@@ -7,6 +7,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 50px;
     }
   }
   &__logo {
@@ -86,6 +87,13 @@
     }
     &__logo {
       max-width: 70px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__top {
+      .container {
+        padding: 0 12px;
+      }
     }
   }
 }

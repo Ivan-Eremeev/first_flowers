@@ -18,7 +18,7 @@
 
 // Переменные для кастомизации Bootstrap 5
 $grid-gutter-width: 24px; // Отступы между колонками
-$grid-columns: 8; // Колличество колонок
+$grid-columns: 12; // Колличество колонок
 $grid-breakpoints: ( // Брейкпоинты
   xs: 0,
   sm: 576px,
@@ -85,6 +85,7 @@ $box_shadow_hover: 4px 4px 4px rgba(0, 0, 0, 0.5);
 @import 'blocks/menu';
 @import 'blocks/header';
 @import 'blocks/slider';
+@import 'blocks/items';
 // @import 'blocks/accordion';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
