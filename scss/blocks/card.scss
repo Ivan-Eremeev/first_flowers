@@ -50,4 +50,33 @@
     color: $text;
     box-shadow: $box_shadow_hover;
   }
+  @include media-breakpoint-down(md) {
+    &__img {
+      height: 250px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__img {
+      height: 180px;
+    }
+    &__content {
+      padding: 10px;
+    }
+    &__bottom {
+      padding: 10px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__price {
+      font-size: 16px;
+    }
+    &__icon {
+      width: 35px;
+      height: 32px;
+    }
+  }
 }

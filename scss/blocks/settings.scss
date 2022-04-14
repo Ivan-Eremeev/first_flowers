@@ -74,6 +74,13 @@ body {
 }
 .content {
   flex-grow: 1;
+  padding-top: 292px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 250px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 153px;
+  }
 }
 .btn {
   display: inline-flex;

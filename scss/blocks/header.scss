@@ -1,8 +1,12 @@
 .header {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
   &__top {
     padding: 50px 0;
     background-image: url(../img/header_bg.jpg);
     background-size: cover;
+    transition: 0.2s;
     .container {
       display: flex;
       justify-content: space-between;
@@ -64,6 +68,17 @@
       }
     }
   }
+  // stiky menu
+  &.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: showStyky 0.5s;
+    .header__top {
+      padding: 10px 0;
+    }
+  }
   @include media-breakpoint-down(xl) {
     &__top {
       padding: 20px 0;
@@ -95,5 +110,15 @@
         padding: 0 12px;
       }
     }
+  }
+}
+
+@keyframes showStyky {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0)
   }
 }

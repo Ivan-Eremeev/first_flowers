@@ -763,4 +763,26 @@ $(document).ready(function () {
 	// AOS
 	AOS.init();
 
+	// Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
+	function stikyMenu() {
+		const header = document.querySelector('.header');
+
+		setNavbarPosition();
+
+		window.addEventListener('scroll', () => {
+			setNavbarPosition();
+		});
+
+		function setNavbarPosition() {
+
+			if (window.scrollY > header.clientTop + 300) {
+				header.classList.add('stiky');
+			} else if (window.scrollY <= header.clientTop + 1) {
+				header.classList.remove('stiky');
+			}
+
+		}
+	}
+	stikyMenu();
+
 });

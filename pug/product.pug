@@ -1,0 +1,28 @@
+extends blocks/base.pug
+
+block title 
+	title Страница товара
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			
+			// breadcrumbs
+			.breadcrumbs
+				.container
+					ul 
+						li 
+							a(href="#") Доставка цветов
+						li 
+							a(href="#") Каталог
+						li 
+							a(href="#") Классика
+						li 
+							span Пионы
+			//	/breadcrumbs
+			
+		include blocks/footer.pug
