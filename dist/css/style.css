@@ -12303,6 +12303,16 @@ body.lock {
   padding: 20px 78px;
 }
 
+.navPage {
+  padding: 50px 0;
+}
+.navPage h1, .navPage .h1 {
+  margin-bottom: 10px;
+}
+.navPage li {
+  margin: 5px 0;
+}
+
 /* /settings */
 /*!
  * Hamburgers
