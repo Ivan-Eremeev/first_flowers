@@ -7,9 +7,9 @@
   border: none;
   box-shadow: $box_shadow;
   background-color: $white;
-  transition: 0.3s;
   display: flex;
   flex-direction: column;
+  transition-property: opacity, transform, box-shadow !important;
   &__img {
     height: 334px;
     flex-shrink: 0;
