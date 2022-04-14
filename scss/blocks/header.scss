@@ -1,0 +1,91 @@
+.header {
+  &__top {
+    padding: 50px 0;
+    background-image: url(../img/header_bg.jpg);
+    background-size: cover;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    max-width: 140px;
+    img {
+      display: block;
+    }
+  }
+  &__searchblock {
+    flex-grow: 1;
+    max-width: 710px;
+    margin: 0 40px;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__search {
+    position: relative;
+    input {
+      width: 100%;
+      height: 47px;
+      padding: 0 55px 0 34px;
+      border-radius: 24px;
+      border: none;
+      outline: none;
+      box-shadow: $box_shadow;
+      transition: 0.3s;
+      &:focus, &:hover {
+        box-shadow: $box_shadow_hover;
+      }
+    }
+    label {
+      position: absolute;
+      top: 50%;
+      right: 26px;
+      transform: translate(0,-50%);
+    }
+  }
+  &__contact {
+    max-width: 280px;
+    font-size: 24px;
+    text-align: right;
+    p {
+      margin: 25px 0;
+      a {
+        color: $text;
+        white-space: nowrap;
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__top {
+      padding: 20px 0;
+    }
+    &__searchblock {
+      max-width: 550px;
+      margin-right: 0;
+      text-align: right;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__logo {
+      max-width: 120px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__top {
+      padding: 10px 0;
+    }
+    &__logo {
+      max-width: 70px;
+    }
+  }
+}

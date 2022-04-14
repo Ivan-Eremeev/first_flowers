@@ -1,0 +1,78 @@
+/* settings */
+svg {
+  max-width: 100%;
+}
+html {
+  height: 100%;
+}
+a {
+  transition: .2s;
+  text-decoration: none;
+}
+button,
+input,
+textarea {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 18px;
+}
+body {
+  height: 100%;
+  min-width: 319px;
+  background-color: #fff;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 18px;
+  color: $text;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  &.lock {
+    overflow: hidden;
+  }
+}
+.mobile-hide {
+  @include media-breakpoint-down(md) {
+    display: none !important;
+  }
+}
+.mobile-visible {
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
+}
+.img-responsive {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+*:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+}
+*::placeholder {
+  color: $prompt;
+  opacity: 1;
+}
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex-grow: 1;
+}
+/* /settings */

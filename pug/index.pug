@@ -1,0 +1,19 @@
+extends blocks/base.pug
+
+block title 
+	title Навигация по страницам
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			.container
+
+				ul
+					li 
+						a(href="home.html") Главная
+			
+		include blocks/footer.pug

@@ -1,0 +1,46 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+
+			// slider
+			.slider
+				.container
+					#sliderHome.slider__slider 
+						.swiper-wrapper
+							.swiper-slide
+								.slider__block 
+									.slider__img 
+										img(src="img/slider.jpg", alt="")
+									.slider__sticker ВЕСЕННЯЯ АКЦИЯ
+									.slider__content 
+										.slider__title -30%
+										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
+							.swiper-slide
+								.slider__block 
+									.slider__img 
+										img(src="img/slider.jpg", alt="")
+									.slider__sticker ВЕСЕННЯЯ АКЦИЯ
+									.slider__content 
+										.slider__title -30%
+										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
+							.swiper-slide
+								.slider__block 
+									.slider__img 
+										img(src="img/slider.jpg", alt="")
+									.slider__sticker ВЕСЕННЯЯ АКЦИЯ
+									.slider__content 
+										.slider__title -30%
+										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
+						.slider__pagination.swiper-pagination
+			//	/slider
+			
+		include blocks/footer.pug

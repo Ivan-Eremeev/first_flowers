@@ -1,0 +1,117 @@
+.slider {
+  padding: 32px 0;
+  &__slider {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+  }
+  &__pagination {
+    bottom: 16px !important;
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $purple;
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 62px 92px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: $purple;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+  &__sticker {
+    padding: 8px 26px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: $box_shadow;
+  }
+  &__content {
+    text-align: right;
+  }
+  &__title {
+    font-size: 128px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    -webkit-text-stroke: 3px #fff;
+    text-shadow: -3px 0 #fff,
+    0 3px #fff,
+    3px 0 #fff,
+    0 -3px #fff;
+  }
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 34px;
+    background-color: $purple;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    word-spacing: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    box-shadow: $box_shadow;
+    &:hover {
+      box-shadow: $box_shadow-hover;
+      color: #fff;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__block {
+      padding: 50px 30px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__title {
+      font-size: 90px;
+      -webkit-text-stroke: 1px #fff;
+      text-shadow: -1px 0 #fff,
+      0 1px #fff,
+      1px 0 #fff,
+      0 -1px #fff;
+    }
+    &__btn {
+      font-size: 20px;
+    }
+    &__sticker {
+      font-size: 16px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__block {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__content {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}
