@@ -1,0 +1,22 @@
+.social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -24px;
+    margin-left: -24px;
+    li {
+      padding-top: 24px;
+      padding-left: 24px;
+      a {
+        img {
+          transition: 0.1s;
+        }
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}

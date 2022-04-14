@@ -1,0 +1,20 @@
+.products {
+  margin-bottom: 70px;
+  .row {
+    margin-top: -32px;
+    > * {
+      margin-top: 32px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 32px;
+  }
+}

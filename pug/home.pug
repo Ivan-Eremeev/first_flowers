@@ -5,6 +5,8 @@ block title
 
 block content
 
+	include blocks/card.pug
+
 	.page
 
 		include blocks/header.pug
@@ -66,7 +68,81 @@ block content
 										span до самого вручения
 									.items__icon 
 										img(src="img/man_icon.svg", alt="")
-
 			//	/items
+
+			// products
+			.products
+				.container 
+					h2.products__title БУКЕТЫ
+					.row.gy-3
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product.jpg')
+					.products__btn 
+						a(href="#").btn.btn--white.btn--medium Показать больше
+			//	/products
+
+			// products
+			.products
+				.container 
+					h2.products__title В КОРОБКЕ
+					.row.gy-3
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_2.jpg')
+					.products__btn 
+						a(href="#").btn.btn--white.btn--medium Показать больше
+			//	/products
+
+			// products
+			.products
+				.container 
+					h2.products__title В КОРОБКЕ
+					.row.gy-3
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+						.col-xl-3.col-lg-4.col-md-6
+							+card('img/product_3.jpg')
+					.products__btn 
+						a(href="#").btn.btn--white.btn--medium Показать больше
+			//	/products
 			
 		include blocks/footer.pug
