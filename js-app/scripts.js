@@ -785,12 +785,12 @@ $(document).ready(function () {
 			setNavbarPosition();
 		});
 
-		window.addEventListener('resize', (e) => {
-			if (e.target.innerWidth !== width) {
-				width = e.target.innerWidth;
-				setPaddingTopFromHeader();
-			}
-		})
+		// window.addEventListener('resize', (e) => {
+		// 	if (e.target.innerWidth !== width) {
+		// 		width = e.target.innerWidth;
+		// 		setPaddingTopFromHeader();
+		// 	}
+		// })
 
 		function setNavbarPosition() {
 
