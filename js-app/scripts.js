@@ -760,6 +760,14 @@ $(document).ready(function () {
 
 	});
 
+	const sliderProductPage = new Swiper('#sliderProductPage', {
+		spaceBetween: 20,
+		pagination: {
+			el: '.product__pagination',
+			clickable: true,
+		},
+	});
+
 	// AOS
 	AOS.init();
 
@@ -767,6 +775,7 @@ $(document).ready(function () {
 	function stikyMenu() {
 		const header = document.querySelector('.header');
 		const content = document.querySelector('.content');
+		let width = window.clientWidth;
 
 		setPaddingTopFromHeader();
 
@@ -776,8 +785,11 @@ $(document).ready(function () {
 			setNavbarPosition();
 		});
 
-		window.addEventListener('resize', () => {
-			setPaddingTopFromHeader();
+		window.addEventListener('resize', (e) => {
+			if (e.target.innerWidth !== width) {
+				width = e.target.innerWidth;
+				setPaddingTopFromHeader();
+			}
 		})
 
 		function setNavbarPosition() {

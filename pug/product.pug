@@ -31,8 +31,18 @@ block content
 					.row.gy-3
 						.col-lg-6
 							.product__title.d-block.d-lg-none БУКЕТ ИЗ ПИОНОВ
-							.product__img 
-								img(src="img/product-page.webp", alt="")
+							.product__slider#sliderProductPage
+								.swiper-wrapper
+									.swiper-slide
+										.product__img 
+											img(src="img/product-page.webp", alt="")
+									.swiper-slide
+										.product__img 
+											img(src="img/product-page.webp", alt="")
+									.swiper-slide
+										.product__img 
+											img(src="img/product-page.webp", alt="")
+								.product__pagination.swiper-pagination
 							.product__description 
 								.product__subtitle ОПИСАНИЕ БУКЕТА
 								.product__text
@@ -56,8 +66,8 @@ block content
 											span.product__size-radio
 											span.product__size-name РАЗМЕР L
 											span.product__size-price 3500₽
-									.product__size.active
-										input#size_1(type="radio" name="sizes").product__size-input
+									.product__size
+										input#size_1(type="radio" name="sizes" checked).product__size-input
 										label(for="size_1").product__size-label
 											span.product__size-radio
 											span.product__size-name РАЗМЕР XL 

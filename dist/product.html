@@ -80,7 +80,20 @@
 						<div class="row gy-3">
 							<div class="col-lg-6">
 								<div class="product__title d-block d-lg-none">БУКЕТ ИЗ ПИОНОВ</div>
-								<div class="product__img"> <img src="img/product-page.webp" alt=""></div>
+								<div class="product__slider" id="sliderProductPage">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product__img"> <img src="img/product-page.webp" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product__img"> <img src="img/product-page.webp" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product__img"> <img src="img/product-page.webp" alt=""></div>
+										</div>
+									</div>
+									<div class="product__pagination swiper-pagination"></div>
+								</div>
 								<div class="product__description"> 
 									<div class="product__subtitle">ОПИСАНИЕ БУКЕТА</div>
 									<div class="product__text">
@@ -106,8 +119,8 @@
 											<input class="product__size-input" id="size_0" type="radio" name="sizes">
 											<label class="product__size-label" for="size_0"><span class="product__size-radio"></span><span class="product__size-name">РАЗМЕР L</span><span class="product__size-price">3500₽</span></label>
 										</div>
-										<div class="product__size active">
-											<input class="product__size-input" id="size_1" type="radio" name="sizes">
+										<div class="product__size">
+											<input class="product__size-input" id="size_1" type="radio" name="sizes" checked>
 											<label class="product__size-label" for="size_1"><span class="product__size-radio"></span><span class="product__size-name">РАЗМЕР XL <span>(на фото)</span></span><span class="product__size-price">5500₽</span></label>
 										</div>
 										<div class="product__size"> 

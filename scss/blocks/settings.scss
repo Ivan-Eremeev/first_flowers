@@ -122,4 +122,12 @@ body {
     margin: 5px 0;
   }
 }
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $purple;
+}
 /* /settings */

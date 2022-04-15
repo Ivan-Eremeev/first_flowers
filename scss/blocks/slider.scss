@@ -7,13 +7,6 @@
   }
   &__pagination {
     bottom: 16px !important;
-    .swiper-pagination-bullet {
-      background-color: #fff;
-      opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-      background-color: $purple;
-    }
   }
   &__block {
     display: flex;

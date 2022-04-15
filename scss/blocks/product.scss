@@ -27,16 +27,12 @@
   &__size {
     font-size: 24px;
     margin-bottom: 24px;
-    &.active {
-      .product__size-label {
-        background-color: $light_pink;
-      }
-    }
   }
   &__size-input {
     display: none;
     &:checked {
       ~ .product__size-label {
+        background-color: $light_pink;
         .product__size-radio {
           background-color: $green;
         }
@@ -152,6 +148,14 @@
         box-shadow: $box_shadow;
       }
     }
+  }
+  &__slider {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+  }
+  &__pagination {
+    bottom: 20px;
   }
   @include media-breakpoint-down(xxl) {
     &__title {
