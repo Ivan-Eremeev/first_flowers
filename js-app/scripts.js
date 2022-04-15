@@ -766,12 +766,21 @@ $(document).ready(function () {
 	// Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
 	function stikyMenu() {
 		const header = document.querySelector('.header');
+		const content = document.querySelector('.content');
+
+		setPaddingTopFromHeader();
 
 		setNavbarPosition();
 
 		window.addEventListener('scroll', () => {
 			setNavbarPosition();
 		});
+
+		window.addEventListener('resize', () => {
+			setTimeout(() => {
+				setPaddingTopFromHeader();
+			}, 500);
+		})
 
 		function setNavbarPosition() {
 
@@ -782,7 +791,40 @@ $(document).ready(function () {
 			}
 
 		}
+
+		function setPaddingTopFromHeader() {
+			console.log(content);
+			// content.style.paddingTop = header.clientHeight;
+			content.setAttribute('style', `padding-top:${header.clientHeight
+}px;`);
+		}
+
 	}
 	stikyMenu();
+
+	// Изменение количества товара (плюс минус)
+	function counter(block) {
+		let counter = document.querySelector(block);
+		let minus = counter.querySelector('.counter-minus');
+		let plus = counter.querySelector('.counter-plus');
+		let inputWrap = counter.querySelector('.counter-input');
+		let input = inputWrap.querySelector('input');
+		plus.addEventListener('click', () => {
+			if (Number(input.value) < 999) {
+				input.value = Number(input.value) + 1;
+			}
+		})
+		minus.addEventListener('click', () => {
+			if (Number(input.value) > 1) {
+				input.value = Number(input.value) - 1;
+			}
+		})
+		input.addEventListener('blur', () => {
+			if (input.value == '' || input.value == 0) {
+				input.value = 1;
+			}
+		})
+	}
+	counter('#counter');
 
 });

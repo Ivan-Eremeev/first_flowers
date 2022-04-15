@@ -12254,17 +12254,6 @@ body.lock {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-top: 292px;
-}
-@media (max-width: 1199.98px) {
-  .content {
-    padding-top: 250px;
-  }
-}
-@media (max-width: 767.98px) {
-  .content {
-    padding-top: 153px;
-  }
 }
 
 .btn {
@@ -12302,6 +12291,7 @@ body.lock {
 .btn--purple:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
 }
 .btn--small {
   padding: 12px 14px;
@@ -12311,7 +12301,7 @@ body.lock {
   font-size: 22px;
 }
 .btn--large {
-  padding: 20px 78px;
+  padding: 14px 78px;
 }
 
 .navPage {
@@ -12325,142 +12315,6 @@ body.lock {
 }
 
 /* /settings */
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-transition-property: opacity, -webkit-filter;
-  transition-property: opacity, -webkit-filter;
-  -o-transition-property: opacity, filter;
-  transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible;
-}
-.hamburger:hover {
-  opacity: 0.7;
-}
-.hamburger.is-active:hover {
-  opacity: 0.7;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
-}
-
-.hamburger-box {
-  width: 30px;
-  height: 21px;
-  display: inline-block;
-  position: relative;
-}
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -1.5px;
-}
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 30px;
-  height: 3px;
-  background-color: #000;
-  border-radius: 4px;
-  position: absolute;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -o-transition-property: transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-.hamburger-inner::before, .hamburger-inner::after {
-  content: "";
-  display: block;
-}
-.hamburger-inner::before {
-  top: -9px;
-}
-.hamburger-inner::after {
-  bottom: -9px;
-}
-
-/*
- * Squeeze
- */
-.hamburger--squeeze .hamburger-inner {
-  -webkit-transition-duration: 0.075s;
-  -o-transition-duration: 0.075s;
-  transition-duration: 0.075s;
-  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  -o-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.hamburger--squeeze .hamburger-inner::before {
-  -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-  -o-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-}
-.hamburger--squeeze .hamburger-inner::after {
-  -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  -o-transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.hamburger--squeeze.is-active .hamburger-inner {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition-delay: 0.12s;
-  -o-transition-delay: 0.12s;
-  transition-delay: 0.12s;
-  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.hamburger--squeeze.is-active .hamburger-inner::before {
-  top: 0;
-  opacity: 0;
-  -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-  -o-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-}
-.hamburger--squeeze.is-active .hamburger-inner::after {
-  bottom: 0;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -o-transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
 .menu {
   position: relative;
   background-color: #FFD4DE;
@@ -13096,4 +12950,208 @@ body.lock {
 }
 .breadcrumbs ul li a {
   color: #C5528B;
+}
+.product__img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.product__img img {
+  display: block;
+  width: 100%;
+}
+.product__title {
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.product__sub {
+  font-size: 24px;
+  color: #858585;
+  margin-bottom: 34px;
+}
+.product__sizes {
+  margin-bottom: 40px;
+}
+.product__size {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.product__size.active .product__size-label {
+  background-color: #FFD4DE;
+}
+.product__size-input {
+  display: none;
+}
+.product__size-input:checked ~ .product__size-label .product__size-radio {
+  background-color: #219653;
+}
+.product__size-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 18px 30px 18px 78px;
+  border-radius: 15px;
+  background-color: #F2F2F2;
+  font-size: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.product__size-label:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.product__size-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 23px;
+  left: 16px;
+}
+.product__size-name span {
+  color: #C5528B;
+}
+.product__size-price {
+  color: #C5528B;
+}
+.product__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.product__counter-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.13);
+  color: #C5528B;
+  text-shadow: 0.3s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.product__counter-btn:hover {
+  color: #219653;
+}
+.product__input {
+  width: 60px;
+}
+.product__input input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.product__buttons {
+  margin-bottom: 35px;
+}
+.product__buttons .btn {
+  width: 100%;
+  height: 100%;
+}
+.product__postcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.product__postcard img {
+  width: 48px;
+  margin-right: 16px;
+}
+.product__description {
+  padding: 40px 0 0;
+}
+.product__subtitle {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.product__text p {
+  margin: 20px 0;
+}
+.product__apps {
+  padding: 80px 0;
+}
+.product__apps-row {
+  margin-top: -24px;
+  margin-left: -24px;
+}
+.product__apps-row a {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 24px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.product__apps-row a:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1399.98px) {
+  .product__title {
+    font-size: 34px;
+  }
+  .product__size {
+    margin-bottom: 15px;
+  }
+  .product__size-label {
+    padding: 14px 22px 14px 58px;
+    font-size: 22px;
+  }
+  .product__size-radio {
+    width: 16px;
+    height: 16px;
+    top: 17px;
+  }
+}
+@media (max-width: 575.98px) {
+  .product__size-label {
+    font-size: 18px;
+  }
+  .product__sub {
+    font-size: 20px;
+  }
+  .product__title {
+    font-size: 28px;
+  }
+  .product__subtitle {
+    font-size: 24px;
+  }
+  .product__apps {
+    padding: 40px 0;
+  }
 }

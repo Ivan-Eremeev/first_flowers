@@ -74,13 +74,6 @@ body {
 }
 .content {
   flex-grow: 1;
-  padding-top: 292px;
-  @include media-breakpoint-down(xl) {
-    padding-top: 250px;
-  }
-  @include media-breakpoint-down(md) {
-    padding-top: 153px;
-  }
 }
 .btn {
   display: inline-flex;
@@ -105,6 +98,7 @@ body {
     color: $white;
     &:hover {
       box-shadow: $box_shadow;
+      color: $white;
     }
   }
   &--small {
@@ -115,7 +109,7 @@ body {
     font-size: 22px;
   }
   &--large {
-    padding: 20px 78px;
+    padding: 14px 78px;
   }
 }
 .navPage {
