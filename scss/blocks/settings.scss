@@ -85,6 +85,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   user-select: none;
+  transition: 0.3s;
   &--white {
     background-color: $white;
     color: $purple;
