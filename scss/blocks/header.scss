@@ -6,7 +6,8 @@
     padding: 50px 0;
     background-image: url(../img/header_bg.jpg);
     background-size: cover;
-    transition: 0.2s;
+    transition: 0.5s;
+    overflow: hidden;
     .container {
       display: flex;
       justify-content: space-between;
@@ -76,7 +77,8 @@
     width: 100%;
     animation: showStyky 0.5s;
     .header__top {
-      padding: 10px 0;
+      max-height: 0;
+      padding: 0;
     }
   }
   @include media-breakpoint-down(xl) {

@@ -12512,77 +12512,11 @@ body.lock {
   }
 }
 @media (max-width: 767.98px) {
-  .menu {
-    text-align: right;
-  }
-  .menu__nav {
-    width: 100%;
-    padding: 50px 10px;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 10;
-  }
   .menu__list {
-    display: block;
-    -webkit-transition: 1s 0.3s;
-    -o-transition: 1s 0.3s;
-    transition: 1s 0.3s;
     margin-left: 0;
-    -moz-text-align-last: left;
-    text-align-last: left;
   }
   .menu__list li {
     margin-left: 0;
-  }
-  .menu__list a {
-    margin: 0;
-  }
-  .menu__btn {
-    display: inline-block;
-    margin-left: auto;
-  }
-  .menu__close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  .menu__close:after, .menu__close:before {
-    content: "";
-    display: block;
-    width: 70%;
-    height: 2px;
-    background-color: #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  .menu__close:after {
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    -ms-transform: translate(-50%, -50%) rotate(45deg);
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .menu__close:before {
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  .menu--left .menu__nav {
-    left: -800px;
-  }
-  .menu--left.open .menu__nav {
-    left: 0;
-  }
-  .menu--right .menu__nav {
-    right: -800px;
-  }
-  .menu--right.open .menu__nav {
-    right: 0;
   }
 }
 
@@ -12595,9 +12529,10 @@ body.lock {
   padding: 50px 0;
   background-image: url(../img/header_bg.jpg);
   background-size: cover;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
 }
 .header__top .container {
   display: -webkit-box;
@@ -12682,7 +12617,8 @@ body.lock {
   animation: showStyky 0.5s;
 }
 .header.stiky .header__top {
-  padding: 10px 0;
+  max-height: 0;
+  padding: 0;
 }
 @media (max-width: 1199.98px) {
   .header__top {
