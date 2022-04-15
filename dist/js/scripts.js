@@ -777,9 +777,7 @@ $(document).ready(function () {
 		});
 
 		window.addEventListener('resize', () => {
-			setTimeout(() => {
-				setPaddingTopFromHeader();
-			}, 500);
+			setPaddingTopFromHeader();
 		})
 
 		function setNavbarPosition() {
@@ -793,10 +791,10 @@ $(document).ready(function () {
 		}
 
 		function setPaddingTopFromHeader() {
-			console.log(content);
-			// content.style.paddingTop = header.clientHeight;
-			content.setAttribute('style', `padding-top:${header.clientHeight
-}px;`);
+			setTimeout(() => {
+				content.setAttribute('style', `padding-top:${header.clientHeight
+					}px;`);
+			}, 500);
 		}
 
 	}
