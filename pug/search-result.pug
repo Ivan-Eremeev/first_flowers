@@ -1,0 +1,23 @@
+extends blocks/base.pug
+
+block title 
+	title Результат поиска
+
+block content
+
+	.page
+
+		include blocks/header.pug
+
+		.content
+
+			// search-result
+			.search-result
+				.container
+					.search-result__title Результат поиска
+					.search-result__text 
+						p Сожалеем, но по Вашему запросу ничего не найдено. 
+					a(href="#").btn.btn--small.btn--white НА ГЛАВНУЮ
+			//	/search-result
+		
+		include blocks/footer.pug
