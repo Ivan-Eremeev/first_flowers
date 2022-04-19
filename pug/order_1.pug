@@ -1,0 +1,113 @@
+extends blocks/base.pug
+
+block title 
+	title Оформление заказа (шаг 1)
+
+block content
+
+	.page
+
+		include blocks/header-nomenu.pug
+		
+		.content
+			
+			// order
+			.order
+				.container
+					.order__back Вернуться назад
+					.row 
+						.col-md-6 
+							form(action="#") 
+								.order__title.order__title--mb32 Оформление заказа
+								.order__tabs.js-tabs-radio
+									.order__triggers.js-tabs-radio_triggers
+										.order__trigger 
+											input#delivery_0(type="radio" name="delivery" data-trigger="tab_0" checked)
+											label(for="delivery_0") ДОСТАВИТЬ МНЕ
+										.order__trigger 
+											input#delivery_1(type="radio" name="delivery" data-trigger="tab_1")
+											label(for="delivery_1") ДОСТАВИТЬ В ПОДАРОК
+									.order__body
+										.order__tabblock.js-tabs-radio_tab.open(data-tab="tab_0")
+											.row.gy-2
+												.col-lg-6
+													.input 
+														.input__label Имя 
+															span &#42;
+														.input__input 
+															input(type="text") 
+												.col-lg-6
+													.input 
+														.input__label Телефон получателя  
+															span &#42;
+														.input__input 
+															input(type="text") 
+										.order__tabblock.js-tabs-radio_tab(data-tab="tab_1")
+											.order__arrange
+												.approval
+													input#arrange.approval__input(type="checkbox")
+													label.approval__label(for="arrange")
+														span.approval__checkbox 
+														span.approval__text Согласовать с получателем
+											.row.gy-2
+												.col-lg-6
+													.input 
+														.input__label Имя 
+															span &#42;
+														.input__input 
+															input(type="text") 
+												.col-lg-6
+													.input 
+														.input__label Телефон получателя 
+															span &#42;
+														.input__input 
+															input(type="text") 
+												.col-lg-6
+													.input 
+														.input__label Дополнительная информация: 
+														.input__input 
+															textarea(type="text") 
+								.order__postcard 
+									.approval
+										input#approval.approval__input(type="checkbox" data-drop="postcard").js-drop-input
+										label.approval__label(for="approval")
+											span.approval__checkbox 
+											span.approval__text.approval__text--small Добавить в заказ открытку 
+												span (бесплатно)
+									.order__postcard-drop#postcard
+										.input 
+											.input__label Текст открытки:
+											.input__input 
+												input(type="text")
+										.order__postcard-ps Символов: 0 из 100
+								.row.gy-3.align-items-end
+									.col-lg-6
+										.order__progress 
+											.order__progress-step 1/3
+											.order__progress-line 
+												span(style="width: 33.33%")
+									.col-lg-6 
+										.order__buttons 
+											a(href="#").btn.btn--small.btn--white НАЗАД
+											a(href="#").btn.btn--small.btn--purple ДАЛЕЕ
+						.col-xl-4.col-md-5.offset-md-1.offset-xl-2.d-md-block.d-none
+							.order__head 
+								.order__title Итого:
+								ul.order__list
+									li 1 товар
+										span 3590 ₽
+							.order__imageblock 
+								.order__img 
+									img(src="img/product.webp", alt="")
+								| Букет из пионов
+							.order__title Итого с учетом скидок:
+							ul.order__list 
+								li 1 товар
+									span 3590 ₽
+								li Доставка
+									span.order__purple бесплатно
+								li К оплате
+									span К оплате
+			//	/order
+			
+		include blocks/footer.pug

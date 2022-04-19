@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Оформление заказа (шаг 1)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/libs/air-datepicker.css">
+		<link rel="stylesheet" href="css/libs/aos.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header">
+				<div class="header_container">
+					<div class="header__top"> 
+						<div class="container"><a class="header__logo" href="#"> <img src="img/logo.webp" alt=""></a>
+							<div class="header__searchblock"> 
+								<h1 class="header__title d-none d-md-block">ДОСТАВКА ЦВЕТОВ ПО МОСКВЕ</h1>
+								<div class="header__search"> 
+									<input id="search" type="text" placeholder="Поиск по сайту">
+									<label for="search"> 
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z" stroke="#3C3A3A" stroke-width="2" stroke-linecap="round"></path>
+										</svg>
+									</label>
+								</div>
+							</div>
+							<div class="header__contact d-none d-xl-block">
+								<p><a href="tel:+79030153315">+7 (903) 015-33-15</a></p>
+								<p><a href="mailto:first-flowers@mail.ru">E-mail: first-flowers@mail.ru</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- order-->
+				<div class="order">
+					<div class="container">
+						<div class="order__back">Вернуться назад</div>
+						<div class="row"> 
+							<div class="col-md-6"> 
+								<form action="#"> 
+									<div class="order__title order__title--mb32">Оформление заказа</div>
+									<div class="order__tabs js-tabs-radio">
+										<div class="order__triggers js-tabs-radio_triggers">
+											<div class="order__trigger"> 
+												<input id="delivery_0" type="radio" name="delivery" data-trigger="tab_0" checked>
+												<label for="delivery_0">ДОСТАВИТЬ МНЕ</label>
+											</div>
+											<div class="order__trigger"> 
+												<input id="delivery_1" type="radio" name="delivery" data-trigger="tab_1">
+												<label for="delivery_1">ДОСТАВИТЬ В ПОДАРОК</label>
+											</div>
+										</div>
+										<div class="order__body">
+											<div class="order__tabblock js-tabs-radio_tab open" data-tab="tab_0">
+												<div class="row gy-2">
+													<div class="col-lg-6">
+														<div class="input"> 
+															<div class="input__label">Имя <span>&#42;</span></div>
+															<div class="input__input"> 
+																<input type="text">
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="input"> 
+															<div class="input__label">Телефон получателя  <span>&#42;</span></div>
+															<div class="input__input"> 
+																<input type="text">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="order__tabblock js-tabs-radio_tab" data-tab="tab_1">
+												<div class="order__arrange">
+													<div class="approval">
+														<input class="approval__input" id="arrange" type="checkbox">
+														<label class="approval__label" for="arrange"><span class="approval__checkbox"> </span><span class="approval__text">Согласовать с получателем</span></label>
+													</div>
+												</div>
+												<div class="row gy-2">
+													<div class="col-lg-6">
+														<div class="input"> 
+															<div class="input__label">Имя <span>&#42;</span></div>
+															<div class="input__input"> 
+																<input type="text">
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="input"> 
+															<div class="input__label">Телефон получателя <span>&#42;</span></div>
+															<div class="input__input"> 
+																<input type="text">
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="input"> 
+															<div class="input__label">Дополнительная информация: </div>
+															<div class="input__input"> 
+																<textarea type="text"> </textarea>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order__postcard"> 
+										<div class="approval">
+											<input class="approval__input js-drop-input" id="approval" type="checkbox" data-drop="postcard">
+											<label class="approval__label" for="approval"><span class="approval__checkbox"> </span><span class="approval__text approval__text--small">Добавить в заказ открытку <span>(бесплатно)</span></span></label>
+										</div>
+										<div class="order__postcard-drop" id="postcard">
+											<div class="input"> 
+												<div class="input__label">Текст открытки:</div>
+												<div class="input__input"> 
+													<input type="text">
+												</div>
+											</div>
+											<div class="order__postcard-ps">Символов: 0 из 100</div>
+										</div>
+									</div>
+									<div class="row gy-3 align-items-end">
+										<div class="col-lg-6">
+											<div class="order__progress"> 
+												<div class="order__progress-step">1/3</div>
+												<div class="order__progress-line"> <span style="width: 33.33%"></span></div>
+											</div>
+										</div>
+										<div class="col-lg-6"> 
+											<div class="order__buttons"> <a class="btn btn--small btn--white" href="#">НАЗАД</a><a class="btn btn--small btn--purple" href="#">ДАЛЕЕ</a></div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="col-xl-4 col-md-5 offset-md-1 offset-xl-2 d-md-block d-none">
+								<div class="order__head"> 
+									<div class="order__title">Итого:</div>
+									<ul class="order__list">
+										<li>1 товар<span>3590 ₽</span></li>
+									</ul>
+								</div>
+								<div class="order__imageblock"> 
+									<div class="order__img"> <img src="img/product.webp" alt=""></div>Букет из пионов
+								</div>
+								<div class="order__title">Итого с учетом скидок:</div>
+								<ul class="order__list"> 
+									<li>1 товар<span>3590 ₽</span></li>
+									<li>Доставка<span class="order__purple">бесплатно</span></li>
+									<li>К оплате<span>К оплате</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--	/order-->
+			</div>
+			<!-- footer-->
+			<footer class="footer"> 
+				<div class="container"> 
+					<div class="footer__row"><a class="footer__logo" href="#"> <img src="img/logo_footer.webp" alt=""></a>
+						<div class="footer__text"> <span>2022 First Flowers</span><a href="malto:first-flowers@mail.ru">E-mail: first-flowers@mail.ru</a><a href="#">WhatsApp: +7 903 015-33-15</a></div>
+						<!-- social-->
+						<div class="social">
+							<ul class="social__list"> 
+								<li> <a href="#"> <img src="img/tg_icon.svg" alt=""></a></li>
+								<li> <a href="#"> <img src="img/whatsapp_icon.svg" alt=""></a></li>
+								<li> <a href="#"> <img src="img/vk_icon.svg" alt=""></a></li>
+							</ul>
+						</div>
+						<!--	/social-->
+					</div>
+				</div>
+			</footer>
+			<!-- /footer-->
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/swiper-bundle.min.js"> </script>
+		<script src="js/libs/air-datepicker.js"> </script>
+		<script src="js/libs/aos.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

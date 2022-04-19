@@ -659,9 +659,9 @@ $(document).ready(function () {
 	// }
 	// hideListItems();
 
-	// // Выпадайки при клике по кнопке
-	// // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
-	// // Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
+	// Выпадайки при клике по кнопке
+	// Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
+	// Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
 	// function dropBlock(btn) {
 	// 	var $this = undefined,
 	// 			drop = undefined,
@@ -773,17 +773,19 @@ $(document).ready(function () {
 
 	// Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
 	function stikyMenu() {
-		const header = document.querySelector('.header');
+		const header = document.querySelector('#header');
 		const content = document.querySelector('.content');
 		let width = window.clientWidth;
 
-		setPaddingTopFromHeader();
+		if (header) {
+			setPaddingTopFromHeader();
 
-		setNavbarPosition();
-
-		window.addEventListener('scroll', () => {
 			setNavbarPosition();
-		});
+
+			window.addEventListener('scroll', () => {
+				setNavbarPosition();
+			});
+		}
 
 		// window.addEventListener('resize', (e) => {
 		// 	if (e.target.innerWidth !== width) {
@@ -838,5 +840,63 @@ $(document).ready(function () {
 		}
 	}
 	counter('#counter');
+
+	// Выпадайка по состоянию input (checked)
+	function showDropInputChecked(input) {
+		var $this = undefined,
+				drop = undefined,
+				close = $('.js-drop-input-close');
+		input.on('change', function () {
+			$this = $(this);
+			drop = $('#' + $this.data('drop'));
+			if ($this.prop('checked')) {
+				$this.addClass('active');
+				drop.addClass('open');
+			} else {
+				$this.removeClass('active');
+				drop.removeClass('open');
+			}
+			$(document).mouseup(function (e) {
+				if (!$this.is(e.target)
+					&& $this.has(e.target).length === 0
+					&& !drop.is(e.target)
+					&& drop.has(e.target).length === 0) {
+					$this.removeClass('active');
+					drop.removeClass('open');
+				}
+			});
+		})
+		close.on('click', function () {
+			$('[data-drop="' + $(this).data('drop') + '"]').removeClass('active');
+			$('#' + $(this).data('drop')).removeClass('open');
+		})
+	}
+	showDropInputChecked($('.js-drop-input'));
+
+	// Табы на радиокнопках
+	function tabsRadio(tabs) {
+		if (tabs.length) {
+			tabs.each(function() {
+				let triggers = tabs.find('.js-tabs-radio_triggers input');
+				let tabsBlocks = tabs.find('.js-tabs-radio_tab');
+				triggers.on('change', function () {
+					let trigger = $(this);
+					let tab = $('[data-tab="' + trigger.data('trigger') + '"]');
+					tabsBlocks.stop().fadeOut(0).removeClass('open');
+					tab.stop().fadeIn(300).addClass('open');
+				});
+			});
+		}
+	}
+	tabsRadio($('.js-tabs-radio'));
+
+	// airDatepicker | Календарь
+	let minDate = new Date();
+	new AirDatepicker('#airDatepicker', {
+		navTitles: {
+			days: 'MMMM yyyy'
+		},
+		minDate
+	})
 
 });

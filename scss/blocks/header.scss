@@ -1,7 +1,4 @@
 .header {
-  position: absolute;
-  width: 100%;
-  z-index: 20;
   &__top {
     padding: 50px 0;
     background-image: url(../img/header_bg.jpg);
@@ -12,7 +9,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 50px;
+      // padding: 0 50px;
     }
   }
   &__logo {
@@ -69,18 +66,6 @@
       }
     }
   }
-  // stiky menu
-  &.stiky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    animation: showStyky 0.5s;
-    .header__top {
-      max-height: 0;
-      padding: 0;
-    }
-  }
   @include media-breakpoint-down(xl) {
     &__top {
       padding: 20px 0;
@@ -109,7 +94,7 @@
   @include media-breakpoint-down(sm) {
     &__top {
       .container {
-        padding: 0 12px;
+        // padding: 0 12px;
       }
     }
   }
@@ -122,5 +107,24 @@
 
   to {
     transform: translateY(0)
+  }
+}
+
+// stiky menu
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  &.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: showStyky 0.5s;
+  
+    .header__top {
+      max-height: 0;
+      padding: 0;
+    }
   }
 }
