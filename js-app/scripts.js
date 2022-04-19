@@ -896,7 +896,12 @@ $(document).ready(function () {
 		navTitles: {
 			days: 'MMMM yyyy'
 		},
-		minDate
+		minDate,
+		onSelect({ date, formattedDate, datepicker }) {
+			datepicker.hide();
+		}
 	})
+
+	$('select').styler();
 
 });

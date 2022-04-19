@@ -82,6 +82,9 @@ $box_shadow_hover: 0px 8px 10px rgba(0, 0, 0, 0.5);
 // Подключение файлов
 @import 'blocks/settings';
 @import 'blocks/tabs-radio';
+@import 'blocks/input';
+@import 'blocks/select';
+@import 'blocks/air-datepicker';
 // @import 'hamburgers/hamburgers';
 @import 'blocks/menu';
 @import 'blocks/header';
@@ -96,7 +99,6 @@ $box_shadow_hover: 0px 8px 10px rgba(0, 0, 0, 0.5);
 @import 'blocks/search-result';
 @import 'blocks/order';
 @import 'blocks/approval';
-@import 'blocks/input';
 // @import 'blocks/accordion';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';

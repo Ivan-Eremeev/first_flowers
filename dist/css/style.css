@@ -12326,12 +12326,135 @@ body.lock {
   background-color: #C5528B;
 }
 
+/* /settings */
+.js-tabs-radio_tab {
+  display: none;
+}
+.js-tabs-radio_tab.open {
+  display: block;
+}
+
+.input__label {
+  font-size: 16px;
+  color: #818C92;
+  margin-bottom: 12px;
+}
+.input__label span {
+  color: #C5528B;
+}
+.input__input {
+  position: relative;
+}
+.input__input input {
+  width: 100%;
+  height: 47px;
+  padding: 0 20px;
+  border-radius: 15px;
+  background-color: #E5E5E5;
+  border: none;
+  outline: none;
+}
+.input__input textarea {
+  width: 100%;
+  height: 64px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background-color: #E5E5E5;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.input__calendar {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.select__label {
+  font-size: 16px;
+  color: #818C92;
+  margin-bottom: 12px;
+}
+.select__label span {
+  color: #C5528B;
+}
+.select__select .jq-selectbox {
+  width: 100%;
+}
+.select__select .jq-selectbox__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 47px;
+  padding: 0 45px 0 20px;
+  background: #E5E5E5;
+  border: none;
+  border-radius: 15px;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 18px;
+  color: #000;
+}
+.select__select .jq-selectbox__select-text {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.select__select .jq-selectbox__trigger {
+  border: none;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.select__select .jq-selectbox__trigger-arrow {
+  border-top: 8px solid #000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.select__select .jq-selectbox li {
+  padding: 8px 0;
+  text-align: center;
+}
+.select__select .jq-selectbox li:first-child {
+  border: none;
+}
+.select__select .jq-selectbox li.selected {
+  background-color: transparent;
+  color: #C5528B;
+}
+.select__select .jq-selectbox li:hover {
+  background-color: #E5E5E5;
+}
+.select__select .jq-selectbox__dropdown {
+  margin-top: 10px;
+  padding: 16px 22px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-size: 18px;
+}
+.select__select .jq-selectbox.focused .jq-selectbox__select {
+  border: none;
+}
+
 .air-datepicker {
   width: 280px;
   border-radius: 15px;
   border: none;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .air-datepicker-nav {
@@ -12342,10 +12465,26 @@ body.lock {
 .air-datepicker-nav--action path {
   stroke: #000;
 }
+.air-datepicker-nav--action[data-action=prev] {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+.air-datepicker-nav--action[data-action=next] {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
 
 .air-datepicker-nav--title {
   font-size: 24px;
   color: #000;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .air-datepicker-nav--title i {
   color: #000;
@@ -12402,14 +12541,6 @@ body.lock {
 }
 .air-datepicker-cell.-selected-.-current-:hover {
   color: #fff;
-}
-
-/* /settings */
-.js-tabs-radio_tab {
-  display: none;
-}
-.js-tabs-radio_tab.open {
-  display: block;
 }
 
 .menu {
@@ -13527,43 +13658,4 @@ body.lock {
 }
 .approval__text span {
   color: #C5528B;
-}
-
-.input__label {
-  font-size: 16px;
-  color: #818C92;
-  margin-bottom: 12px;
-}
-.input__label span {
-  color: #C5528B;
-}
-.input__input {
-  position: relative;
-}
-.input__input input {
-  width: 100%;
-  height: 47px;
-  padding: 0 20px;
-  border-radius: 15px;
-  background-color: #E5E5E5;
-  border: none;
-  outline: none;
-}
-.input__input textarea {
-  width: 100%;
-  height: 64px;
-  padding: 15px 20px;
-  border-radius: 15px;
-  background-color: #E5E5E5;
-  border: none;
-  outline: none;
-  resize: none;
-}
-.input__calendar {
-  position: absolute;
-  top: 50%;
-  right: 6px;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
 }

@@ -28,12 +28,12 @@ block content
 													span &#42;
 												.input__input 
 													input(type="text") 
-										.col-lg-6
+										.col-lg-6.order-lg-0.order-1
 											.input
 												.input__label Дата доставки
 													span &#42;
 												.input__input 
-													input(type="text")#airDatepicker 
+													input(type="text" autocomplete="off")#airDatepicker 
 													label(for="airDatepicker").input__calendar 
 														img(src="img/calendar.svg", alt="")
 										.col-lg-6
@@ -41,12 +41,21 @@ block content
 												.input__label Дополнительная информация: 
 												.input__input 
 													textarea(type="text") 
-										.col-lg-6
-											.input 
-												.input__label Время доставки
+										.col-lg-6.order-lg-0.order-2
+											.select 
+												.select__label Время доставки
 													span &#42;
-												.input__input 
-													input(type="text") 
+												.select__select 
+													select(name="#") 
+														option(value="#") в ближайшее время
+														option(value="#") 12:00-13:00
+														option(value="#") 13:00-14:00
+														option(value="#") 14:00-15:00
+														option(value="#") 15:00-16:00
+														option(value="#") 16:00-17:00
+														option(value="#") 17:00-18:00
+														option(value="#") 18:00-19:00
+														option(value="#") 19:00-20:00
 								.row.gy-3.align-items-end
 									.col-md-6
 										.order__progress 
