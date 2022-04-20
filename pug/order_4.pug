@@ -1,0 +1,48 @@
+extends blocks/base.pug
+
+block title 
+	title Оформление заказа (шаг 3)
+
+block content
+
+	.page
+
+		include blocks/header-nomenu.pug
+		
+		.content
+			
+			// order
+			.order
+				.container
+					a(href="#").order__back Вернуться назад
+					.row 
+						.col-md-6 
+							form(action="#") 
+								.order__title.order__title--mb32 Ваш заказ
+								.order__subtitle.order__purple Поздравляем!
+								.order__text Заказ оформлен. Ваш номер заказа 
+									span 453885. 
+									| Сохраните его, он необходим для получения информации о заказе.
+								.btn.btn--white.mt-4 НА ГЛАВНУЮ
+
+						.col-xl-4.col-md-5.offset-md-1.offset-xl-2.d-md-block.d-none
+							.order__head 
+								.order__title Итого:
+								ul.order__list
+									li 1 товар
+										span 3590 ₽
+							.order__imageblock 
+								.order__img 
+									img(src="img/product.webp", alt="")
+								| Букет из пионов
+							.order__title Итого с учетом скидок:
+							ul.order__list 
+								li 1 товар
+									span 3590 ₽
+								li Доставка
+									span.order__purple бесплатно
+								li К оплате
+									span К оплате
+			//	/order
+			
+		include blocks/footer.pug
