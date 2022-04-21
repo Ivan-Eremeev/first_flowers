@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Главная</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/libs/air-datepicker.css">
+		<link rel="stylesheet" href="css/libs/jquery.formstyler.css">
+		<link rel="stylesheet" href="css/libs/jquery.formstyler.theme.css">
+		<link rel="stylesheet" href="css/libs/aos.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header" id="header">
+				<div class="header_container">
+					<div class="header__top"> 
+						<div class="container"><a class="header__logo" href="#"> <img src="img/logo.webp" alt=""></a>
+							<div class="header__searchblock"> 
+								<h1 class="header__title d-none d-md-block">ДОСТАВКА ЦВЕТОВ ПО МОСКВЕ</h1>
+								<div class="header__search"> 
+									<input id="search" type="text" placeholder="Поиск по сайту">
+									<label for="search"> 
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z" stroke="#3C3A3A" stroke-width="2" stroke-linecap="round"></path>
+										</svg>
+									</label>
+								</div>
+							</div>
+							<div class="header__contact d-none d-xl-block">
+								<p><a href="tel:+79030153315">+7 (903) 015-33-15</a></p>
+								<p><a href="mailto:first-flowers@mail.ru">E-mail: first-flowers@mail.ru</a></p>
+							</div>
+						</div>
+					</div>
+					<!-- menu-->
+					<div class="js-menu menu menu--right">
+						<div class="container">
+							<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+							<nav class="menu__nav">
+								<ul class="menu__list">
+									<li><a href="#">Классика</a></li>
+									<li><a href="#">Авторские</a></li>
+									<li><a href="#">Букеты</a></li>
+									<li><a href="#">Розы</a></li>
+									<li><a href="#">Пионы</a></li>
+									<li><a href="#">Сухоцветы</a></li>
+									<li><a href="#">В корзине</a></li>
+									<li><a href="#">В коробке</a></li>
+								</ul>
+								<div class="menu__close" id="menu-close"></div>
+							</nav>
+						</div>
+					</div>
+					<!-- /menu-->
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- slider-->
+				<div class="slider">
+					<div class="container">
+						<div class="slider__slider" id="sliderHome"> 
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider__block"> 
+										<div class="slider__img"> <img src="img/slider.webp" alt=""></div>
+										<div class="slider__sticker">ВЕСЕННЯЯ АКЦИЯ</div>
+										<div class="slider__content"> 
+											<div class="slider__title">-30%</div><a class="slider__btn" href="#">ВЫБРАТЬ БУКЕТ</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider__block"> 
+										<div class="slider__img"> <img src="img/slider.webp" alt=""></div>
+										<div class="slider__sticker">ВЕСЕННЯЯ АКЦИЯ</div>
+										<div class="slider__content"> 
+											<div class="slider__title">-30%</div><a class="slider__btn" href="#">ВЫБРАТЬ БУКЕТ</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider__block"> 
+										<div class="slider__img"> <img src="img/slider.webp" alt=""></div>
+										<div class="slider__sticker">ВЕСЕННЯЯ АКЦИЯ</div>
+										<div class="slider__content"> 
+											<div class="slider__title">-30%</div><a class="slider__btn" href="#">ВЫБРАТЬ БУКЕТ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__pagination swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<!--	/slider-->
+				<!-- items-->
+				<div class="items" data-aos="fade-up">
+					<div class="container"> 
+						<div class="items__container">
+							<div class="row gy-3 justify-content-center">
+								<div class="col-lg-4 col-md-6">
+									<div class="items__card"> 
+										<div class="items__title">Бесплатная доставка<span>по Москве за 2 часа</span></div>
+										<div class="items__icon"> <img src="img/car_icon.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="items__card"> 
+										<div class="items__title">Бесплатная открытка<span>к каждому букету	</span></div>
+										<div class="items__icon"> <img src="img/sheet_icon.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="items__card"> 
+										<div class="items__title">Вежливые курьеры<span>до самого вручения</span></div>
+										<div class="items__icon"> <img src="img/man_icon.svg" alt=""></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--	/items-->
+				<!-- products-->
+				<section class="products">
+					<div class="container"> 
+						<h2 class="products__title" data-aos="fade-up">БУКЕТЫ</h2>
+						<!-- filter-->
+						<div class="filter" data-aos="fade-up">
+							<div class="filter__btn js-drop-btn" data-drop="filterDrop">
+								<div class="filter__circles"> </div>ФИЛЬТР
+							</div>
+							<form class="filter__drop" action="#" id="filterDrop">
+								<div class="filter__clear">Очистить все</div>
+								<div class="filter__row"> 
+									<div class="filter__title">Раздел</div>
+									<div class="filter__categories">
+										<div class="filter__category">
+											<input id="category_0" type="radio" name="category" checked>
+											<label for="category_0">Монобукеты</label>
+										</div>
+										<div class="filter__category">
+											<input id="category_1" type="radio" name="category">
+											<label for="category_1">Авторские</label>
+										</div>
+										<div class="filter__category">
+											<input id="category_2" type="radio" name="category">
+											<label for="category_2">Коробки</label>
+										</div>
+										<div class="filter__category">
+											<input id="category_3" type="radio" name="category">
+											<label for="category_3">Корзины</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__row"> 
+									<div class="filter__title">Цветок</div>
+									<div class="filter__names"> 
+										<div class="filter__name"> 
+											<input id="name_0" type="radio" name="name">
+											<label for="name_0">Пионы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_1" type="radio" name="name">
+											<label for="name_1">Розы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_2" type="radio" name="name" checked>
+											<label for="name_2">Тюльпаны</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_3" type="radio" name="name">
+											<label for="name_3">Пионовидные розы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_4" type="radio" name="name">
+											<label for="name_4">Орхидеи</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_5" type="radio" name="name">
+											<label for="name_5">Пионы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_6" type="radio" name="name">
+											<label for="name_6">Розы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_7" type="radio" name="name">
+											<label for="name_7">Тюльпаны</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_8" type="radio" name="name">
+											<label for="name_8">Пионовидные розы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_9" type="radio" name="name">
+											<label for="name_9">Орхидеи</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_10" type="radio" name="name">
+											<label for="name_10">Пионы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_11" type="radio" name="name">
+											<label for="name_11">Розы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_12" type="radio" name="name">
+											<label for="name_12">Тюльпаны</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_13" type="radio" name="name">
+											<label for="name_13">Пионовидные розы</label>
+										</div>
+										<div class="filter__name"> 
+											<input id="name_14" type="radio" name="name">
+											<label for="name_14">Орхидеи</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__row"> 
+									<div class="filter__title">Цвет букета</div>
+									<div class="filter__colors">
+										<div class="filter__color filter__color--green"> 
+											<input id="color_0" type="radio" name="color" checked>
+											<label for="color_0"> </label>
+										</div>
+										<div class="filter__color filter__color--red"> 
+											<input id="color_1" type="radio" name="color">
+											<label for="color_1"> </label>
+										</div>
+										<div class="filter__color filter__color--purple"> 
+											<input id="color_2" type="radio" name="color">
+											<label for="color_2"> </label>
+										</div>
+										<div class="filter__color filter__color--pink"> 
+											<input id="color_3" type="radio" name="color">
+											<label for="color_3"> </label>
+										</div>
+										<div class="filter__color filter__color--orange"> 
+											<input id="color_4" type="radio" name="color">
+											<label for="color_4"> </label>
+										</div>
+										<div class="filter__color filter__color--yellow"> 
+											<input id="color_5" type="radio" name="color">
+											<label for="color_5"> </label>
+										</div>
+										<div class="filter__color filter__color--beige">
+											<input id="color_6" type="radio" name="color">
+											<label for="color_6"> </label>
+										</div>
+										<div class="filter__color filter__color--blue"> 
+											<input id="color_7" type="radio" name="color">
+											<label for="color_7"> </label>
+										</div>
+										<div class="filter__color filter__color--black"> 
+											<input id="color_8" type="radio" name="color">
+											<label for="color_8"> </label>
+										</div>
+										<div class="filter__color filter__color--white"> 
+											<input id="color_9" type="radio" name="color">
+											<label for="color_9"> </label>
+										</div>
+										<div class="filter__color filter__color--multicolor"> 
+											<input id="color_10" type="radio" name="color">
+											<label for="color_10"> </label>
+										</div>
+										<div class="filter__color filter__color--multicolor-light">
+											<input id="color_11" type="radio" name="color">
+											<label for="color_11"> </label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- /filter-->
+						<div class="row gy-3">
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+						</div>
+						<div class="products__btn"> <a class="btn btn--white btn--medium" href="#">Показать больше</a></div>
+					</div>
+				</section>
+				<!--	/products-->
+				<!-- products-->
+				<section class="products">
+					<div class="container"> 
+						<h2 class="products__title" data-aos="fade-up">В КОРОБКЕ</h2>
+						<div class="row gy-3">
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_2.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+						</div>
+						<div class="products__btn"> <a class="btn btn--white btn--medium" href="#">Показать больше</a></div>
+					</div>
+				</section>
+				<!--	/products-->
+				<!-- products-->
+				<section class="products">
+					<div class="container"> 
+						<h2 class="products__title" data-aos="fade-up">В КОРОБКЕ</h2>
+						<div class="row gy-3">
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+										<!-- card--><a class="card" href="#" data-aos="fade-up">
+											<div class="card__img"><img src="img/product_3.webp" alt=""></div>
+											<div class="card__content"> 
+												<div class="card__title">Букет <br>из пионов</div>
+												<div class="card__text">Бесплатная доставка через  2 часа</div>
+											</div>
+											<div class="card__bottom"> 
+												<div class="card__price">2500 &#8381;</div>
+												<div class="card__icon"> </div>
+											</div></a>
+										<!--	/card-->
+							</div>
+						</div>
+						<div class="products__btn"> <a class="btn btn--white btn--medium" href="#">Показать больше</a></div>
+					</div>
+				</section>
+				<!--	/products-->
+			</div>
+			<!-- footer-->
+			<footer class="footer"> 
+				<div class="container"> 
+					<div class="footer__row"><a class="footer__logo" href="#"> <img src="img/logo_footer.webp" alt=""></a>
+						<div class="footer__text"> <span>2022 First Flowers</span><a href="malto:first-flowers@mail.ru">E-mail: first-flowers@mail.ru</a><a href="#">WhatsApp: +7 903 015-33-15</a></div>
+						<!-- social-->
+						<div class="social">
+							<ul class="social__list"> 
+								<li> <a href="#"> <img src="img/tg_icon.svg" alt=""></a></li>
+								<li> <a href="#"> <img src="img/whatsapp_icon.svg" alt=""></a></li>
+								<li> <a href="#"> <img src="img/vk_icon.svg" alt=""></a></li>
+							</ul>
+						</div>
+						<!--	/social-->
+					</div>
+				</div>
+			</footer>
+			<!-- /footer-->
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/swiper-bundle.min.js"> </script>
+		<script src="js/libs/air-datepicker.js"> </script>
+		<script src="js/libs/jquery.formstyler.min.js"> </script>
+		<script src="js/libs/aos.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

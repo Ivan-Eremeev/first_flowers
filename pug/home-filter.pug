@@ -1,0 +1,260 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block content
+
+	include blocks/card.pug
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+
+			// slider
+			.slider
+				.container
+					#sliderHome.slider__slider 
+						.swiper-wrapper
+							.swiper-slide
+								.slider__block 
+									.slider__img 
+										img(src="img/slider.webp", alt="")
+									.slider__sticker ВЕСЕННЯЯ АКЦИЯ
+									.slider__content 
+										.slider__title -30%
+										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
+							.swiper-slide
+								.slider__block 
+									.slider__img 
+										img(src="img/slider.webp", alt="")
+									.slider__sticker ВЕСЕННЯЯ АКЦИЯ
+									.slider__content 
+										.slider__title -30%
+										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
+							.swiper-slide
+								.slider__block 
+									.slider__img 
+										img(src="img/slider.webp", alt="")
+									.slider__sticker ВЕСЕННЯЯ АКЦИЯ
+									.slider__content 
+										.slider__title -30%
+										a(href="#").slider__btn ВЫБРАТЬ БУКЕТ
+						.slider__pagination.swiper-pagination
+			//	/slider
+
+			// items
+			.items(data-aos="fade-up")
+				.container 
+					.items__container
+						.row.gy-3.justify-content-center
+							.col-lg-4.col-md-6
+								.items__card 
+									.items__title Бесплатная доставка
+										span по Москве за 2 часа
+									.items__icon 
+										img(src="img/car_icon.svg", alt="")
+							.col-lg-4.col-md-6
+								.items__card 
+									.items__title Бесплатная открытка
+										span к каждому букету	
+									.items__icon 
+										img(src="img/sheet_icon.svg", alt="")
+							.col-lg-4.col-md-6
+								.items__card 
+									.items__title Вежливые курьеры
+										span до самого вручения
+									.items__icon 
+										img(src="img/man_icon.svg", alt="")
+			//	/items
+
+			// products
+			section.products
+				.container 
+					h2.products__title(data-aos="fade-up") БУКЕТЫ
+
+					// filter
+					.filter(data-aos="fade-up")
+						.filter__btn.js-drop-btn(data-drop="filterDrop")
+							.filter__circles 
+							| ФИЛЬТР
+						form(action="#").filter__drop#filterDrop
+							.filter__clear Очистить все
+							.filter__row 
+								.filter__title Раздел
+								.filter__categories
+									.filter__category
+										input#category_0(type="radio", name="category" checked)
+										label(for="category_0") Монобукеты
+									.filter__category
+										input#category_1(type="radio", name="category")
+										label(for="category_1") Авторские
+									.filter__category
+										input#category_2(type="radio", name="category")
+										label(for="category_2") Коробки
+									.filter__category
+										input#category_3(type="radio", name="category")
+										label(for="category_3") Корзины
+							.filter__row 
+								.filter__title Цветок
+								.filter__names 
+									.filter__name 
+										input#name_0(type="radio", name="name")
+										label(for="name_0") Пионы
+									.filter__name 
+										input#name_1(type="radio", name="name")
+										label(for="name_1") Розы
+									.filter__name 
+										input#name_2(type="radio", name="name" checked)
+										label(for="name_2") Тюльпаны
+									.filter__name 
+										input#name_3(type="radio", name="name")
+										label(for="name_3") Пионовидные розы
+									.filter__name 
+										input#name_4(type="radio", name="name")
+										label(for="name_4") Орхидеи
+									.filter__name 
+										input#name_5(type="radio", name="name")
+										label(for="name_5") Пионы
+									.filter__name 
+										input#name_6(type="radio", name="name")
+										label(for="name_6") Розы
+									.filter__name 
+										input#name_7(type="radio", name="name")
+										label(for="name_7") Тюльпаны
+									.filter__name 
+										input#name_8(type="radio", name="name")
+										label(for="name_8") Пионовидные розы
+									.filter__name 
+										input#name_9(type="radio", name="name")
+										label(for="name_9") Орхидеи
+									.filter__name 
+										input#name_10(type="radio", name="name")
+										label(for="name_10") Пионы
+									.filter__name 
+										input#name_11(type="radio", name="name")
+										label(for="name_11") Розы
+									.filter__name 
+										input#name_12(type="radio", name="name")
+										label(for="name_12") Тюльпаны
+									.filter__name 
+										input#name_13(type="radio", name="name")
+										label(for="name_13") Пионовидные розы
+									.filter__name 
+										input#name_14(type="radio", name="name")
+										label(for="name_14") Орхидеи
+							.filter__row 
+								.filter__title Цвет букета
+								.filter__colors
+									.filter__color.filter__color--green 
+										input#color_0(type="radio", name="color" checked)
+										label(for="color_0") 
+									.filter__color.filter__color--red 
+										input#color_1(type="radio", name="color")
+										label(for="color_1") 
+									.filter__color.filter__color--purple 
+										input#color_2(type="radio", name="color")
+										label(for="color_2") 
+									.filter__color.filter__color--pink 
+										input#color_3(type="radio", name="color")
+										label(for="color_3") 
+									.filter__color.filter__color--orange 
+										input#color_4(type="radio", name="color")
+										label(for="color_4") 
+									.filter__color.filter__color--yellow 
+										input#color_5(type="radio", name="color")
+										label(for="color_5") 
+									.filter__color.filter__color--beige
+										input#color_6(type="radio", name="color")
+										label(for="color_6") 
+									.filter__color.filter__color--blue 
+										input#color_7(type="radio", name="color")
+										label(for="color_7") 
+									.filter__color.filter__color--black 
+										input#color_8(type="radio", name="color")
+										label(for="color_8") 
+									.filter__color.filter__color--white 
+										input#color_9(type="radio", name="color")
+										label(for="color_9") 
+									.filter__color.filter__color--multicolor 
+										input#color_10(type="radio", name="color")
+										label(for="color_10") 
+									.filter__color.filter__color--multicolor-light
+										input#color_11(type="radio", name="color")
+										label(for="color_11") 
+					// /filter
+
+					.row.gy-3
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product.webp')
+					.products__btn 
+						a(href="#").btn.btn--white.btn--medium Показать больше
+			//	/products
+
+			// products
+			section.products
+				.container 
+					h2.products__title(data-aos="fade-up") В КОРОБКЕ
+					.row.gy-3
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_2.webp')
+					.products__btn 
+						a(href="#").btn.btn--white.btn--medium Показать больше
+			//	/products
+
+			// products
+			section.products
+				.container 
+					h2.products__title(data-aos="fade-up") В КОРОБКЕ
+					.row.gy-3
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+						.col-xl-3.col-lg-4.col-6
+							+card('img/product_3.webp')
+					.products__btn 
+						a(href="#").btn.btn--white.btn--medium Показать больше
+			//	/products
+			
+		include blocks/footer.pug

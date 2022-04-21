@@ -1,0 +1,121 @@
+extends blocks/base.pug
+
+block title 
+	title Страница товара
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			
+			// breadcrumbs
+			.breadcrumbs
+				.container
+					ul 
+						li 
+							a(href="#") Доставка цветов
+						li 
+							a(href="#") Каталог
+						li 
+							a(href="#") Классика
+						li 
+							span Пионы
+			//	/breadcrumbs
+
+			// product
+			.product
+				.container 
+					.row.gy-3
+						.col-lg-6
+							.product__title.d-block.d-lg-none БУКЕТ ИЗ ПИОНОВ
+							.product__slider#sliderProductPage
+								.swiper-wrapper
+									.swiper-slide
+										.product__img 
+											img(src="img/product-page.webp", alt="")
+									.swiper-slide
+										.product__img 
+											img(src="img/product-page.webp", alt="")
+									.swiper-slide
+										.product__img 
+											img(src="img/product-page.webp", alt="")
+								.product__arrow.product__arrow--prev.swiper-button-prev
+									<svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M27.0416 12.2915L9.8333 29.4998L27.0416 46.7082M49.1666 29.4998H9.8333H49.1666Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								.product__arrow.product__arrow--next.swiper-button-next
+									<svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M31.9582 12.2915L49.1666 29.4998L31.9582 46.7082M9.83325 29.4998H49.1666H9.83325Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+							.product__description 
+								.product__subtitle ОПИСАНИЕ БУКЕТА
+								.product__text
+									p Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.<br>Приятный и уникальный оттенок, оригинальное сочетание цветов и нежный аромат порадует любую девушку и создаст настроение на весь день!
+									p 
+										ul 
+											li Роза Маритим - 5 шт.
+											li Альстромерия Белая - 4 шт.
+											li Сантини сиреневая - 3 шт.
+											li Ветки фисташки - 1 шт.
+											li Упаковка: тишью и дизайнерский крафт.
+						.col-lg-6
+							form(action="#").product__content 
+								.product__title.d-none.d-lg-block БУКЕТ ИЗ ПИОНОВ
+								.product__sub Выберите размер:
+								
+								.product__sizes 
+									.product__size 
+										input#size_0(type="radio" name="sizes").product__size-input
+										label(for="size_0").product__size-label
+											span.product__size-radio
+											span.product__size-name РАЗМЕР L
+											span.product__size-price 3500₽
+									.product__size
+										input#size_1(type="radio" name="sizes" checked).product__size-input
+										label(for="size_1").product__size-label
+											span.product__size-radio
+											span.product__size-name РАЗМЕР XL 
+												span (на фото)
+											span.product__size-price 5500₽
+									.product__size 
+										input#size_2(type="radio" name="sizes").product__size-input
+										label(for="size_2").product__size-label
+											span.product__size-radio
+											span.product__size-name РАЗМЕР XXL
+											span.product__size-price 7500₽
+									.product__size 
+										input#size_3(type="radio" name="sizes").product__size-input
+										label(for="size_3").product__size-label
+											span.product__size-radio
+											span.product__size-name РАЗМЕР WOW
+											span.product__size-price 10500₽
+
+								.product__counter#counter
+									.product__counter-btn.counter-minus -
+									.product__input.counter-input
+										input(type="text" value="1" maxlength="3")
+									.product__counter-btn.counter-plus +
+								
+								.product__buttons
+									.row.gy-2
+										.col-md-6
+											button(type="submit").btn.btn--large.btn--purple ОФОРМИТЬ ЗАКАЗ
+										.col-md-6
+											a(href="#").btn.btn--large.btn--white КУПИТЬ В 1 КЛИК
+
+								.product__postcard 
+									img(src="img/sheet_icon.svg", alt="")
+									span Бесплатная открытка к цветам
+
+					.product__apps 
+						.product__apps-row
+							a(href="#") 
+								img(src="img/google-play.svg", alt="")
+							a(href="#") 
+								img(src="img/app-store.svg", alt="")
+			//	/product
+			
+		include blocks/footer.pug

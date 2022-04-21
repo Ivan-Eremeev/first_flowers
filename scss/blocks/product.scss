@@ -153,9 +153,22 @@
     overflow: hidden;
     border-radius: 15px;
     position: relative;
+    user-select: none;
   }
   &__pagination {
     bottom: 20px;
+  }
+  &__arrow {
+    width: auto;
+    &:after {
+      display: none;
+    }
+    &--prev {
+      
+    }
+    &--next {
+
+    }
   }
   @include media-breakpoint-down(xxl) {
     &__title {
@@ -172,6 +185,11 @@
       width: 16px;
       height: 16px;
       top: 17px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__arrow {
+      width: 40px;
     }
   }
   @include media-breakpoint-down(sm) {
