@@ -76,11 +76,12 @@ block content
 					h2.products__title(data-aos="fade-up") БУКЕТЫ
 
 					// filter
-					.filter(data-aos="fade-up")
+					.filter
 						.filter__btn.js-drop-btn(data-drop="filterDrop")
 							.filter__circles 
 							| ФИЛЬТР
 						form(action="#").filter__drop#filterDrop
+							.filter__close.js-drop-close(data-drop="filterDrop")
 							.filter__clear Очистить все
 							.filter__row 
 								.filter__title Раздел

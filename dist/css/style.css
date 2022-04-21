@@ -13805,6 +13805,38 @@ body.lock {
   left: div(24px, 2);
   z-index: 9;
 }
+.filter__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.filter__close:after, .filter__close:before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #545454;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.filter__close:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.filter__close:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 .filter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13885,6 +13917,7 @@ body.lock {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  position: absolute;
 }
 .filter__drop.open {
   visibility: visible;
