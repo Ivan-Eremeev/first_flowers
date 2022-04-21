@@ -13407,6 +13407,9 @@ body.lock {
   .product__apps {
     padding: 40px 0;
   }
+  .product__arrow {
+    display: none;
+  }
 }
 
 .search-result {
