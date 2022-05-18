@@ -1,0 +1,100 @@
+extends blocks/base.pug
+
+block title 
+  title Навигация по страницам
+
+block content
+
+  .page
+
+    include blocks/header-about.pug
+    
+    .content
+      
+      // about
+      .about
+        .container 
+
+          .about__head 
+            .row
+              .col-sm-6 
+                a(href="#").about__back Вернуться назад
+                h1.about__title О нас
+              .col-sm-6.d-flex.justify-content-end
+                .about__contact.d-none.d-md-block
+                  p
+                    a(href="tel:+79030153315") +7 (903) 015-33-15
+                  p
+                    a(href="mailto:first-flowers@mail.ru") E-mail: first-flowers@mail.ru
+
+          .about__items 
+            .row
+              .col-md-6
+                .about__item
+                  .d-flex.justify-content-between
+                    .about__item-content
+                      .about__item-title Кто мы?
+                      .about__item-text Компания  «First Flowers» начала свою работу в 2013 году. Сегодня в нашем каталоге представлено более 200 различных композиций. Мы доставляем более 50 букетов ежедневно, и за все время нашей работы мы принесли радость более 160.000 человек. 
+                    .about__item-icon 
+                      img(src="img/flower.svg", alt="")
+              .col-md-6
+                .about__item
+                  .d-flex.justify-content-between
+                    .about__item-content
+                      .about__item-title Наша миссия
+                      .about__item-text Главное для нас - сделать для Вас покупку цветов максимально простой и приятной, и конечно, подарить вам яркие эмоции!
+                    .about__item-icon 
+                      img(src="img/heart.svg", alt="")
+              .col-md-6
+                .about__item
+                  .d-flex.justify-content-between
+                    .about__item-content
+                      .about__item-title Защита ваших персональных данных
+                      .about__item-text Все ваши персональные данные будут под нашей надежной защитой. Мы всегда заботимся о вашей конфиденциальности.
+                    .about__item-icon 
+                      img(src="img/security.svg", alt="")
+              .col-md-6
+                .about__item
+                  .d-flex.justify-content-between
+                    .about__item-content
+                      .about__item-title Мы доставляем больше, чем просто цветы
+                      .about__item-text Наши курьеры и менеджеры всегда доброжелательны и внимательны к каждому клиенту. А так же,  в качестве приятного бонуса, к каждому букету мы дарим вам бесплатную открытку, в которую по Вашему запросу мы можем вписать поздравительный текст!
+                    .about__item-icon 
+                      img(src="img/hands.svg", alt="")
+              
+              .col-12
+                .about__item.about__item--big
+                  .about__item-title.about__item-title--mb42 Наша компания в цифрах 
+                  .d-flex.justify-content-between.flex-wrap
+                    .about__item-col
+                      .about__item-num более 160 тыс.
+                      p Довольных покупателей
+                    .about__item-col
+                      .about__item-num 95 %
+                      p Повторных заказов
+                    .about__item-col
+                      .about__item-num 2 часа
+                      p Скорость доставки 
+                    .about__item-col
+                      .about__item-num 365 дней
+                      p Работаем без выходных
+
+              .col-12
+                .about__item.about__item--big
+                  .about__item-title.about__item-title--mb27 Гарантия качества
+                  p Счастливые клиенты — залог успеха нашей компании.
+                  p И мы делаем все, чтобы заказывать цветы у нас было быстро, удобно и выгодно.
+                  .about__item-buttons 
+                    .about__item-btn 
+                      .btn.btn--purple.btn--small Быстрая доставка
+                    .about__item-btn 
+                      .btn.btn--purple.btn--small Строгий контроль качества
+                    .about__item-btn 
+                      .btn.btn--purple.btn--small Широкий ассортимент
+                    .about__item-btn 
+                      .btn.btn--purple.btn--small Профессиональные флористы
+
+          .about__ps Постановлением Правительства Российской Федерации от 19.01.1998 № 55 (в ред. 27.03.2007 г.) срезанные цветы и горшечные растения обмену и возврату не подлежат (указаны в перечне непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену).
+      //	/about
+      
+    include blocks/footer.pug
